@@ -1,3 +1,11 @@
+/*
+================================================================================================================
+Name : Program15.c
+Author : Sejal Tapadiya
+Description : Write a program to display the environmental variable of the user (use environ).
+Date: 25th Aug, 2023.
+===============================================================================================================
+*/
 #include<stdio.h>
 #include<unistd.h>
 #include<string.h>

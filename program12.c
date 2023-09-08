@@ -1,3 +1,11 @@
+/*
+================================================================================================================
+Name : Program12.c
+Author : Sejal Tapadiya
+Description : Write a program to find out the opening mode of a file. Use fcntl.
+Date: 25th Aug, 2023.
+===============================================================================================================
+*/
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
@@ -19,4 +27,5 @@ int main(){
 		printf("File is Write only\n");
 	else if(accessmode == O_RDWR)
 		printf("File is Read and Write\n");
+	close(fd);
 }

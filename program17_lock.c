@@ -1,4 +1,13 @@
-#include<stdio.h>
+/*
+================================================================================================================
+Name : Program17_lock.c
+Author : Sejal Tapadiya
+Description : Write a program to simulate online ticket reservation. Implement write lock. Write a separate program, to
+open the file, implement write lock, read the ticket number, increment the number and print
+the new ticket number then close the file.
+Date: 25th Aug, 2023.
+===============================================================================================================
+*/#include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
 #include<sys/stat.h>

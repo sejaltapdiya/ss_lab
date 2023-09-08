@@ -3,7 +3,7 @@
 Name : Program16_a.c
 Author : Sejal Tapadiya
 Description : Write a program to perform mandatory locking.
-	      a. Implement Read lock
+	      a. Implement write lock
 Date: 25th Aug, 2023.
 ===============================================================================================================
 */
@@ -17,7 +17,7 @@ int main(void){
 	struct flock lock;
 	int fd;
 	fd = open("db", O_RDWR);
-	lock.l_type = F_RDLCK;
+	lock.l_type = F_WRLCK;
 	lock.l_whence = SEEK_SET;
 	lock.l_start = 0;
 	lock.l_len = 0;
