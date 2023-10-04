@@ -14,7 +14,6 @@ Date: 23rd Aug, 2023.
 #include<sys/stat.h>
 int main(int argc,char* argv[]){
 int fd_read;
-int flag=0;
 char buf[200];
 fd_read=open(argv[1],O_RDONLY);
 int ind=0,read_char=0;

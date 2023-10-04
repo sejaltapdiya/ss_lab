@@ -18,7 +18,7 @@ int main(){
        	
 	int fd = open("file10", O_CREAT | O_RDWR, 0744); 
 	write(fd, "HELLOWORLD",10);
-	lseek(fd,10L,SEEK_CUR);
+	lseek(fd,10,SEEK_CUR);
 	write(fd, "HELLOWORLD",10);
 	close(fd);
 }

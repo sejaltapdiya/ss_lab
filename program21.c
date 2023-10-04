@@ -15,7 +15,7 @@ int main()
     int p_id, p_pid;
     fork();
     p_id = getpid(); /*process id*/
-    p_pid = getpid(); /*parent process id*/
+    p_pid = getppid(); /*parent process id*/
 
     printf("Process ID: %d\n", p_id);
 

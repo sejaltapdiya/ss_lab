@@ -10,9 +10,13 @@ Date: 25th Aug, 2023.
 #include<unistd.h>
 #include<fcntl.h>
 #include<stdlib.h>
-int main(){
+int main(int arg , char* argc[]){
+	if(arg!=2){
+		return 0;
+	}
+			
 	int flags, accessmode;
-	int fd = open("file2", O_RDWR);
+	int fd = open(argc[1], O_RDONLY);
 	flags = fcntl(fd, F_GETFL);
 	if(flags == -1){
 		exit(0);
