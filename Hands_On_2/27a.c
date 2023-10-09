@@ -22,7 +22,8 @@ int main(void){
         mqid = msgget(key, 0);
         printf("Enter message type: ");
         scanf("%ld", &myq.m_type);
-        int rec = msgrcv(mqid, &myq, sizeof(myq.message), myq.m_type,0|MSG_NOERROR);
+        int rec = msgrcv(mqid, &myq, sizeof(myq.message), myq.m_type, 0);
+
         if (rec == -1)
    		exit(-1);
 	printf("Message: %s\n", myq.message);
