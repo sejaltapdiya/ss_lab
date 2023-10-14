@@ -16,7 +16,7 @@ int main()
 {
 	int fd,fd2;
 	char buff[80], buff2[80];
-	fd=open("Prog1", O_WRONLY);
+	fd=open("prog1", O_WRONLY);
 	printf("Enter message from program 1:");
 	scanf(" %[^\n]", buff);
 	write(fd, &buff, sizeof(buff));
